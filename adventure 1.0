@@ -1,0 +1,29 @@
+import time
+
+def game_start():
+    print("Welcome to the Adventure Game!")
+    time.sleep(1)
+    print("You find yourself in a dark room.")
+    time.sleep(1)
+    print("You see two doors in front of you: one red and one blue.")
+    time.sleep(1)
+    choice = input("Which door will you choose? (red/blue): ")
+
+    if choice.lower() == "red":
+        print("You chose the red door.")
+        # Add code for the red door path of the game here
+        # For example: red_door()
+
+    elif choice.lower() == "blue":
+        print("You chose the blue door.")
+        # Add code for the blue door path of the game here
+        # For example: blue_door()
+
+    else:
+        print("Invalid choice. Please choose either red or blue.")
+        game_start()
+
+# Define the functions for each door path here (e.g., red_door(), blue_door())
+
+game_start()
+
